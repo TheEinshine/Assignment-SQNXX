@@ -1,0 +1,16 @@
+   /* .secondDiv,
+   .thirdDiv {
+     display: grid;
+     text-align: center;
+     min-height: 100vh;
+     background-color:#202124;
+   } */
+
+   .firstDiv {
+     text-align: center;
+     display: grid;
+     height: 95vh;
+     
+     background-color:#202124;
+
+   }

@@ -1,0 +1,28 @@
+/* .SpinningImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    opacity: 5%;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .spin-image {
+    height: 500px;
+   
+    animation-name: spin;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+   */
