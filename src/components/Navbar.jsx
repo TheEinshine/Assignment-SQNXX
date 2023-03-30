@@ -1,36 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import ReloadSvg from "../assets/imgs/reload.svg";
 import NavbarStyles from "../assets/css/Navbar.css?";
+import { mainData } from "../App";
 
 function Navbar() {
-  const [color, setColor] = useState("rgb(0,0,0)");
-  useEffect(() => {
-    function generateColor() {
-      let red = Math.floor(Math.random() * 256);
-      let green = Math.floor(Math.random() * 256);
-      let blue = Math.floor(Math.random() * 256);
-      let color = "rgb(" + red + ", " + green + ", " + blue + ")";
-      return color;
-      
-    }
-    // console.log(generateColor());
-    setColor(generateColor());
-  }, []);
-  console.log();
+  const { log, setLog, name, image } = useContext(mainData);
+
+  console.log(log);
   const date = new Date();
-  let currentDate = `${date.getHours()}:${date.getMinutes()}:${date.getMinutes()}`;
+  let currentDate = `${date.getHours()}:${date.getMinutes()}`;
+  const color = useContext(mainData);
 
   return (
-    <nav style={{color:color.toString()}}> 
+    <nav style={{ color: color.color }}>
       <div className="nav-left">
-        <div className="nav-item nav-logo">@shine</div>
+        <div className="nav-item nav-logo">
+          {name == "" ? "@Shine" : "@" + name}
+        </div>
       </div>
       <div className="nav-mid">
         <p id="navbarImgP">
           {currentDate}{" "}
           <button
             id="reloadImgButton"
-            style={{ backgroundColor: color.toString()}}
+            style={{ backgroundColor: color.color }}
             onClick={() => {
               location.reload();
             }}
@@ -40,7 +33,20 @@ function Navbar() {
           </button>{" "}
         </p>
       </div>
-      <div className="nav-right"></div>
+      <div className="nav-right">
+        {log ? (
+          <p
+            onClick={() => {
+              setLog(false);
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            Sign Out
+          </p>
+        ) : (
+          <p>Google's Font</p>
+        )}
+      </div>
     </nav>
   );
 }
