@@ -1,0 +1,66 @@
+.mainDiv {
+  background-color: #131316;
+  user-select: none;
+}
+
+.firstDiv {
+  text-align: center;
+  justify-content: space-around;
+  height: 95.5vh;
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.equalProp {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.228);
+  height: 7%;
+  min-width: 8%;
+  padding: 0.8%;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+}
+
+.equalProp:hover {
+  color: wheat;
+  border-color: rgb(192, 249, 7);
+}
+
+.secondDiv {
+  color: white;
+
+}
+
+.nextDiv {
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 50%;
+  color: rgba(255, 255, 255, 0.157);
+  /* left: 1.3%;
+  right: 1.3%; */
+  /* height: 78%; */
+}
+.nextDiv:hover {
+  border: 1px solid gold;
+  cursor: pointer;
+}
+
+
+
+.divInsideFirstDivFour:hover {
+  border-color: rgb(249, 112, 7);
+  cursor: pointer;
+}
+
+.SignInPara {
+
+  color: rgba(188, 159, 247, 0.721);
+}
+
+.logInDiv {
+  cursor: pointer;
+  color: rgba(253, 243, 224, 0.789);
+}
