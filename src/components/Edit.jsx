@@ -27,7 +27,7 @@ const Edit = () => {
   };
 
   const getData = async () => {
-    const res = await fetch(`http://localhost:5003/getuser/${id}`, {
+    const res = await fetch(`https://mongoserver-2d84.onrender.com/getuser/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const Edit = () => {
   const updateuser = async (e)=> {
     e.preventDefault();
     const { name, email, description } = data;
-    const res2 = await fetch(`http://localhost:5003/updateuser/${id}`, {
+    const res2 = await fetch(`https://mongoserver-2d84.onrender.com/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

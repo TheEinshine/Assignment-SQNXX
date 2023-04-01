@@ -25,7 +25,7 @@ const Register = () => {
   const addInputData = async (e) => {
     e.preventDefault();
     const { name, email, description } = data;
-    const res = await fetch("http://localhost:5003/register", {
+    const res = await fetch("https://mongoserver-2d84.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

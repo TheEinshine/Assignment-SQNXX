@@ -7,7 +7,7 @@ const CRUD = () => {
   const [getUserData, setUserData] = useState([]);
   console.log(getUserData);
   const getData = async (e) => {
-    const res = await fetch("http://localhost:5003/getdata", {
+    const res = await fetch("https://mongoserver-2d84.onrender.com/getdata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const CRUD = () => {
   }, []);
 
   const deleteuser = async (id) => {
-    const res3 = await fetch(`http://localhost:5003/deleteuser/${id}`, {
+    const res3 = await fetch(`https://mongoserver-2d84.onrender.com/deleteuser/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
