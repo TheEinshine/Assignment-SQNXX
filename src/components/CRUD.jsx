@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const CRUD = () => {
   const [getUserData, setUserData] = useState([]);
-  console.log(getUserData);
   const getData = async (e) => {
     const res = await fetch("https://mongoserver-2d84.onrender.com/getdata", {
       method: "GET",
@@ -14,7 +13,6 @@ const CRUD = () => {
       },
     });
     const resData = await res.json();
-    console.log(resData);
 
     if (res.status === 422 || !resData.userData) {
       console.log("Invalid data");
@@ -39,7 +37,6 @@ const CRUD = () => {
       },
     });
     const deletedData = await res3.json();
-    console.log(deletedData);
 
     if (res3.status === 422 || !deletedData) {
       console.log("Invalid data");

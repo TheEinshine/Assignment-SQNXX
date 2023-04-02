@@ -14,7 +14,6 @@ const Details = () => {
       },
     });
     const resData = await res.json();
-    console.log(resData);
 
     if (res.status === 422 || !resData.userIndividual) {
       console.log("Invalid data");
@@ -37,7 +36,6 @@ const Details = () => {
       },
     });
     const deletedData = await res3.json();
-    console.log(deletedData);
 
     if (res3.status === 422 || !deletedData) {
       console.log("Invalid data");

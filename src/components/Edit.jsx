@@ -34,7 +34,6 @@ const Edit = () => {
       },
     });
     const resData = await res.json();
-    console.log(resData);
 
     if (res.status === 422 || !resData.userIndividual) {
       console.log("Invalid data");
@@ -51,7 +50,7 @@ const Edit = () => {
   const updateuser = async (e)=> {
     e.preventDefault();
     const { name, email, description } = data;
-    const res2 = await fetch(`https://mongoserver-2d84.onrender.com/${id}`, {
+    const res2 = await fetch(`https://mongoserver-2d84.onrender.com/updateuser/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +62,6 @@ const Edit = () => {
       })
     });
     const resData2 = await res2.json();
-    console.log(resData2);
 
     if(res2.status === 422 || !resData2){
       window.alert("Invalid Update");

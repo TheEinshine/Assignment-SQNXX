@@ -6,7 +6,6 @@ import { mainData } from "../App";
 function Navbar() {
   const { log, setLog, name,  setName} = useContext(mainData);
 
-  console.log(log);
   const date = new Date();
   let currentDate = `${date.getHours()}:${date.getMinutes()}`;
   const color = useContext(mainData);
@@ -15,7 +14,7 @@ function Navbar() {
     <nav style={{ color: color.color }}>
       <div className="nav-left">
         <div className="nav-item nav-logo">
-          {name == "" ? "@Shine" : "@" + name}
+          {name == "" ? "@SQUPUS" : "@" + name}
         </div>
       </div>
       <div className="nav-mid">
@@ -39,6 +38,7 @@ function Navbar() {
             onClick={() => {
               setLog(false);
               setName('What Happened?');
+              alert("You have been logged out, No cookies are stored");
             }}
             style={{ cursor: "pointer" }}
           >

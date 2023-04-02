@@ -1,0 +1,19 @@
+{
+    "endpoints1": {
+        "/getdata": "http://localhost:5003/getdata",
+        "/getuser/:id": "http://localhost:5003/getuser/:id",
+        "/updateuser/:id": "http://localhost:5003/updateuser/:id",
+        "/deleteuser/:id": "http://localhost:5003/deleteuser/:id"
+    },
+    "endpoints2": {
+        "/getdata": "https://mongoserver-2d84.onrender.com/getdata",
+        "/getuser/:id": "https://mongoserver-2d84.onrender.com/getuser/:id",
+        "/updateuser/:id": "https://mongoserver-2d84.onrender.com/updateuser/:id",
+        "/deleteuser/:id": "https://mongoserver-2d84.onrender.com/deleteuser/:id"
+    },
+    "endpoints3": {
+        "AddData": "https://einshine.onrender.com/Register",
+        "viewData": "https://einshine.onrender.com/view/:id",
+        "editData": "https://einshine.onrender.com/edit/:id"
+    }
+}
