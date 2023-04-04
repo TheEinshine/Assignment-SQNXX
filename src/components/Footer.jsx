@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <p>&copy; Einshine's Signature Web </p>
+        <p>&copy; Abhi's Signature Web </p>
         <a href="" style={{ color: "grey" }}>
          <p> Hirable on Negotiants </p>
         </a>

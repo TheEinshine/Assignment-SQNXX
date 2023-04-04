@@ -21,7 +21,7 @@ export const mainData = createContext();
 
 const App = () => {
   const [color, setColor] = useState("rgb(0,0,0)");
-  const [log, setLog] = useState(false);
+  const [log, setLog] = useState(true);
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 

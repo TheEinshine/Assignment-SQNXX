@@ -65,8 +65,8 @@ const CRUD = () => {
             </Link>
           </div>
         </div>
-        {loading ? ( // Conditionally render loader or table
-          <div className="loader">Loading...</div>
+        {loading ? ( 
+          <div className="loader"></div>
         ) : (
           <table className="table">
             <thead>
